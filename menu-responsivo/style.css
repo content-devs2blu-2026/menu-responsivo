@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 2rem;
+
+    background-color: rgb(196, 223, 248);
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+
+        margin-block: 1rem;
+        gap: 1rem;
+    }
+
+    header, aside, footer {
+        padding: 1rem;
+        background-color: rgb(108, 133, 232);
+
+        border: .2rem solid white;
+    }
+
+    main {
+        width: 100%;
+        padding: 1rem;
+
+        background-color: white;
+        border: .2rem solid rgb(108, 133, 232);
+
+        p {
+            margin-block: 1rem;
+        }
+
+        ul {
+            margin-left: 1rem;
+        }
+    }
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+h2, p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* DESKTOP . TABLET */
+
+@media (min-width: 768px) {
+
+    body {
+        .flex {
+            flex-direction: row;
+        }
+    }
+
+}
+
